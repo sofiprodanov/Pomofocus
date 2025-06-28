@@ -5,7 +5,7 @@ Pomofocus es una aplicacion de escritorio desarrollada en **Python** con **Tkint
 ## 📌 Descripción
 
 Pomofocus permite a los usuarios:
-- Elegir entre niveles de concentracion predefinidos (**Paso de bebé**, **Popular**, **Medio**, **Extendido**) o definir uno **Personalizado**.
+- Elegir entre niveles de concentracion predefinidos (**Paso de bebe**, **Popular**, **Medio**, **Extendido**) o definir uno **Personalizado**.
 - Gestionar tareas con funciones para **agregar**, **editar**, **eliminar**, **marcar como realizadas** y **visualizar** la lista de tareas.
 - Configurar descansos automaticos entre ciclos de estudio.
 - Visualizar informacion sobre la tecnica Pomodoro dentro de la propia app.
