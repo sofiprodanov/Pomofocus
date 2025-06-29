@@ -92,10 +92,12 @@ def abrir_ventana_informacion():
             texto_widget.insert("end", f"- {tiempo}\n", "tiempo")
     
      # ---------- Estilos ----------
+    # ---------- Estilos ----------
     texto_widget.tag_config("titulo", font=("Helvetica", 14, "bold"), foreground="#FFFFFF", spacing3=10)
     texto_widget.tag_config("cuerpo", foreground="#FFFFFF", spacing3=10)
     texto_widget.tag_config("lista", foreground="#FFFFFF", spacing3=4)
-    texto_widget.tag_config("nivel", font="bold", foreground="#FFFFFF", spacing3=2)
+    texto_widget.tag_config("nivel", font=("Helvetica", 11, "bold"), foreground="#FFFFFF", spacing3=2)
     texto_widget.tag_config("tiempo", foreground="#FFFFFF", lmargin1=25, lmargin2=40, spacing1=2, spacing3=2)
+
 
     texto_widget.config(state="disabled")
