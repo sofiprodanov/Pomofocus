@@ -16,7 +16,7 @@ def personalizado():
     try:
         duracion = int(tiempo)
     except (TypeError, ValueError):
-        messagebox.showinfo("Error...", "Se trabaja solo en minutos. Ingrese numeros enteros")
+        messagebox.showinfo("Error...", "Se trabaja solo en minutos. Ingrese numeros enteros: ")
         return
     
     if duracion > 0:
@@ -58,5 +58,7 @@ menu_pomodoro.add_command(label="Salir", command=cerrar_ventana)
 barra_menu.add_command(label="¿Que es Pomofocus?", command=abrir_ventana_informacion)
 
 ventana.after(100, ajustar_texto) # Ajusta el mensaje de la ventana principal
+
+cargar_tareas()
 
 ventana.mainloop()
