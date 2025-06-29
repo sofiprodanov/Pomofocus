@@ -60,4 +60,4 @@ Todo se ejecuta en una interfaz grafica amigable y personalizable.
 
 ## 📄 Licencia
 Este proyecto está licenciado bajo la Licencia MIT.
-Consulta el archivo LICENSE para más información.
+Consulta el archivo [LICENSE](LICENSE)  para más información.

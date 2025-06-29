@@ -1,9 +1,11 @@
-# Byte-compiled / optimized / DLL files
+# ----------------------------------------
+# Python: archivos bytecode, optimizados
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Distribución / paquetes
+# ----------------------------------------
+# Build / distribución / empaquetado
 build/
 develop-eggs/
 dist/
@@ -19,27 +21,32 @@ var/
 .installed.cfg
 *.egg
 
-# Archivos de entorno virtual
+# ----------------------------------------
+# Entornos virtuales
 venv/
 ENV/
 env/
 .venv/
 .pyenv/
 
-# Archivos de configuración del IDE
+# ----------------------------------------
+# Archivos de configuración del IDE/editor
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
 
+# ----------------------------------------
 # Archivos del sistema operativo
 .DS_Store
 Thumbs.db
 
+# ----------------------------------------
 # Archivos de log
 *.log
 
-# Archivos temporales
+# ----------------------------------------
+# Archivos temporales y backups
 *.swp
 *.bak
 *.tmp
