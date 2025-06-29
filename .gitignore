@@ -51,17 +51,6 @@ Thumbs.db
 *.bak
 *.tmp
 
-# ----------------------------------------
-# Archivos generados por Tkinter (recursos)
-*.png
-*.ico
-*.wav
-
-# ----------------------------------------
-# Archivos JSON generados dinámicamente
-tareas.json
-
-# ----------------------------------------
 # Otros posibles archivos que podrías querer ignorar:
 # Archivos de bases de datos SQLite
 *.sqlite3
@@ -81,6 +70,3 @@ htmlcov/
 .tox/
 .nox/
 .cache/
-
-# Archivos de PyInstaller (si generás ejecutables)
-*.spec
