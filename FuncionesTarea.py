@@ -28,8 +28,7 @@ def mostrar_tareas():
 
     ventana_tareas = tk.Toplevel(ventana)
     ventana_tareas.title("Lista de tareas")
-    ventana_tareas.geometry("700x400")
-    
+    ventana_tareas.geometry("700x400") 
 
     # Frame contenedor para tabla y scrollbar
     frame_tabla = tk.Frame(ventana_tareas)
