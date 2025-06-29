@@ -44,7 +44,22 @@ Thumbs.db
 *.bak
 *.tmp
 
-# Archivos generados por Tkinter
-*.png
-*.ico
-*.wav
+# Otros posibles archivos que podrías querer ignorar:
+# Archivos de bases de datos SQLite
+*.sqlite3
+*.db
+
+# Archivos de entorno (variables locales)
+.env
+
+# Archivos comprimidos temporales
+*.zip
+*.tar.gz
+*.rar
+
+# Archivos de test coverage
+htmlcov/
+.coverage
+.tox/
+.nox/
+.cache/
