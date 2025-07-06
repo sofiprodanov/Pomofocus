@@ -96,20 +96,23 @@ def cuenta_regresiva():
     frames[modo_actual].etiqueta.config(text=f"{minutos:02d}:{segundos:02d}")
 
     if segundos_restantes > 0:
-        segundos_restantes = segundos_restantes - 1
+        segundos_restantes -= 1
         temporizador_id = ventana.after(1000, cuenta_regresiva)
-        huboafter=True
+        huboafter = True
     else:
         sonar_alarma()
         if descanso:
             # Descanso terminó, volvemos al estudio
+            descanso = False
             frames[modo_actual].etiqueta_estado.configure(text="ESTUDIANDO...")
-            descanso = False  # Cambiar el flag antes de iniciar estudio
-            iniciar_temporizador(frames[modo_actual].duracion, modo_actual)
+            segundos_restantes = int(frames[modo_actual].duracion * 60)
+            actualizar_tiempo()
+            cuenta_regresiva()
+            actualizar_botones(modo_actual, "Stop", detener_temporizador)
         else:
             # Trabajo terminó, comenzamos descanso
+            descanso = True
             frames[modo_actual].etiqueta_estado.configure(text="DESCANSANDO...")
-            descanso = True  # Cambiar el flag antes de iniciar descanso
             iniciar_descanso()
 
 def detener_temporizador():
